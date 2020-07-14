@@ -4,3 +4,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+*:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+/*  Setas do carousel  */
+button.slick-prev.slick-arrow:before,button.slick-next.slick-arrow:before{
+    font-size: 50px;
+    color: black;   
+}
+button.slick-prev.slick-arrow{
+    left: -100px;
+}
+button.slick-next.slick-arrow{
+    right: -75px;
+}
+@media only screen and (max-width:770px){
+    button.slick-prev.slick-arrow{left: -50px;}
+    button.slick-next.slick-arrow{right: -30px;}
+    button.slick-prev.slick-arrow:before,button.slick-next.slick-arrow:before{font-size: 40px;}
+}
