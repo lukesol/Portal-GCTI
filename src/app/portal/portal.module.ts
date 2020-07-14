@@ -7,12 +7,17 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortalComponent } from './portal/portal.component';
 
 import { DepartmentsComponent } from './components/departments/departments.component';
+import { WhatwedoComponent } from './components/whatwedo/whatwedo.component';
+import { WhatwedoItemComponent } from './components/whatwedo-item/whatwedo-item.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, PortalComponent, DepartmentsComponent],
+  declarations: [HeaderComponent, FooterComponent, PortalComponent, DepartmentsComponent, WhatwedoComponent, WhatwedoItemComponent],
   imports: [
     CommonModule,
-    PortalRoutingModule
+    PortalRoutingModule,
+    SlickCarouselModule
   ]
 })
 export class PortalModule { }
