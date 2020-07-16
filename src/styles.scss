@@ -1,4 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+src: url("assets/fonts/NexaRustSans-Black.otf");
+font-family: "Nexa Rust Sans";
+}
+
+@font-face {
+src: url("assets/fonts/Gotham-Medium.otf");
+font-family: "Gotham Medium";
+}  
+
+@font-face {
+src: url("assets/fonts/Gotham-Black.otf");
+font-family: "Gotham Black";
+}
+@font-face {
+src: url("assets/fonts/Metropolis-ExtraLight.otf");
+font-family: "Gotham Light";
+}
+  
 *{
     margin: 0;
     padding: 0;
