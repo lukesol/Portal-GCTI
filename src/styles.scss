@@ -39,6 +39,11 @@ button.slick-prev.slick-arrow{
 button.slick-next.slick-arrow{
     right: -75px;
 }
+/*  Pontos do Carousel  */
+.slick-dots li button:before{
+    font-size: 12px !important;
+}
+
 @media only screen and (max-width:770px){
     button.slick-prev.slick-arrow{left: -50px;}
     button.slick-next.slick-arrow{right: -30px;}

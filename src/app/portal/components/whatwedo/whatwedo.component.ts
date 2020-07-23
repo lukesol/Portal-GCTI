@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-whatwedo',
@@ -10,15 +9,6 @@ export class WhatwedoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  @ViewChild('slickModal')slickModal: SlickCarouselComponent;
-
-next() {
-  this.slickModal.slickNext();
-  }
-  prev() {
-  this.slickModal.slickPrev();
   }
 
   slides = [

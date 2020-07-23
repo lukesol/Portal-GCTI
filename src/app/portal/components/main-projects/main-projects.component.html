@@ -1,0 +1,72 @@
+<section>
+    <div class="titulo">
+        <h1>PRINCIPAIS PROJETOS</h1>
+    </div>
+    <div class="containerImagens">
+        <div class="fundo">
+            <a href="http://www.parnamirim.rn.gov.br/estatistica_de_transito/" target="_blank">
+                <img src="assets/Imagens/projetos_boletim.png">
+                <div class="informacao">
+                    <h4>- Site -</h4>
+                    <p>Estatísticas de Trânsito</p>
+                </div>
+            </a>
+        </div>
+        <div class="fundo">
+            <a href="http://geoparnamirim.parnamirim.rn.gov.br/#/portal" target="_blank">
+                <img src="assets/Imagens/projetos_obras.png">
+                <div class="informacao">
+                    <h4>- Sistema -</h4>
+                    <p>GeoParnamirim</p>
+                </div>
+            </a>
+        </div>
+        <div class="fundo">
+            <a href="http://diariooficial.parnamirim.rn.gov.br/#/" target="_blank">
+                <img src="assets/Imagens/projetos_diario.png">
+                <div class="informacao">
+                    <h4>- Sistema -</h4>
+                    <p>Diário Oficial</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="containerImagens">
+        <div class="fundo">
+            <a href="http://portalfinados.parnamirim.rn.gov.br/#/home" target="_blank">
+                <img src="assets/Imagens/projetos_finados.png">
+               <div class="informacao">
+                    <h4>- Portal -</h4>
+                    <p>Portal Finados</p>
+                </div>
+            </a>
+        </div>
+        <div class="fundo">
+            <a href="http://falacidadao.parnamirim.rn.gov.br/#/cidadao" target="_blank">
+                <img src="assets/Imagens/projetos_fala.png">
+                <div class="informacao">
+                    <h4>- Sistema -</h4>
+                    <p>Fala Cidadão</p>
+                </div>
+            </a>
+        </div>    
+        <div class="fundo">
+            <a href="http://pontoeletronico.parnamirim.rn.gov.br:8080/#/login" target="_blank">
+                <img src="assets/Imagens/projetos_ponto.png">
+                <div class="informacao">
+                    <h4>- Sistema -</h4>
+                    <p>Ponto Eletrônico</p>
+                </div>
+            </a>
+        </div>    
+    </div>   
+
+    <ngx-slick-carousel class="carousel mobile" #slickModal="slick-carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <app-main-projects-item [item]="slide"></app-main-projects-item>
+            </div>
+    </ngx-slick-carousel>
+    <button (click)="prev()" class="seta esquerda"></button>
+    <button (click)="next()" class="seta direita"></button>
+        
+</section>

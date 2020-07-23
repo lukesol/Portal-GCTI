@@ -12,10 +12,11 @@ import { WhatwedoItemComponent } from './components/whatwedo-item/whatwedo-item.
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ConqueredNumbersComponent } from './components/conquered-numbers/conquered-numbers.component';
 import { MainProjectsComponent } from './components/main-projects/main-projects.component';
+import { MainProjectsItemComponent } from './components/main-projects-item/main-projects-item.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, PortalComponent, DepartmentsComponent, WhatwedoComponent, WhatwedoItemComponent, ConqueredNumbersComponent, MainProjectsComponent],
+  declarations: [HeaderComponent, FooterComponent, PortalComponent, DepartmentsComponent, WhatwedoComponent, WhatwedoItemComponent, ConqueredNumbersComponent, MainProjectsComponent,MainProjectsItemComponent],
   imports: [
     CommonModule,
     PortalRoutingModule,
