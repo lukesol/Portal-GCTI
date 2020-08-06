@@ -10,17 +10,26 @@ import { DepartmentsComponent } from './components/departments/departments.compo
 import { WhatwedoComponent } from './components/whatwedo/whatwedo.component';
 import { WhatwedoItemComponent } from './components/whatwedo-item/whatwedo-item.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SimpleModalModule, DefaultSimpleModalOptionConfig, defaultSimpleModalOptions } from 'ngx-simple-modal';
 import { ConqueredNumbersComponent } from './components/conquered-numbers/conquered-numbers.component';
 import { MainProjectsComponent } from './components/main-projects/main-projects.component';
 import { MainProjectsItemComponent } from './components/main-projects-item/main-projects-item.component';
+import { WhoMakesUsComponent } from './components/who-makes-us/who-makes-us.component';
+import { ModalEmailComponent } from './components/modal-email/modal-email.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, PortalComponent, DepartmentsComponent, WhatwedoComponent, WhatwedoItemComponent, ConqueredNumbersComponent, MainProjectsComponent,MainProjectsItemComponent],
+  declarations: [HeaderComponent, FooterComponent, PortalComponent, DepartmentsComponent, WhatwedoComponent, WhatwedoItemComponent, ConqueredNumbersComponent, MainProjectsComponent,MainProjectsItemComponent, WhoMakesUsComponent, ModalEmailComponent],
   imports: [
     CommonModule,
     PortalRoutingModule,
-    SlickCarouselModule
-  ]
+    SlickCarouselModule,
+    SimpleModalModule
+  ],
+  providers:[{
+    provide: DefaultSimpleModalOptionConfig,
+    useValue: {...defaultSimpleModalOptions,...{ closeOnEscape: true, closeOnClickOutside: true }}
+  }]
+
 })
 export class PortalModule { }

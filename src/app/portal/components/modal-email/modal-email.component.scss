@@ -1,0 +1,91 @@
+.modal-header{
+    justify-content: center;
+    font-size: 18pt;
+    color: #646464;
+}
+    h4, p{
+        font-family: Gotham Light;
+        font-weight: bold;
+    }
+    p{
+        margin: 8px 0px 18px 0px;
+    }
+
+.modal-body{
+    color: #646464;
+    font-family: Gotham Medium;
+    text-align: center;
+}
+.modal-footer{
+    display: flex;
+    justify-content: flex-end;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+fieldset{
+    border: none;
+}
+label.nomes{
+    display: block;
+    width: 135px;
+}
+label.curriculo{
+    margin: 0;
+    display: initial;
+    position: relative;
+    top: 41px;
+    padding: 6px 12px;
+}
+input{
+    font-size: 13pt;
+    font-family: Gotham Light;
+    color: #646464;
+    width: 220px;
+    float: left;
+    line-height: 23px;
+    margin: 0 0 12px 12px;
+    padding-left: 4px;
+    border: solid 1px;
+    border-radius: 15px;
+}
+input[type="file"]{
+    margin: 0;
+    width: 0;
+    border: none;
+    height: 0;
+    padding: 0;
+}
+select{
+    appearance: none;
+    color: #646464;
+    background-color: #eee;
+    float: left;
+    border: transparent;
+    border-radius: 15px;
+    font-family: Gotham Light;
+    font-size: 14pt;
+    padding: 5px;
+    width: 290px;
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) 260px center no-repeat #eee;
+}
+.botoes{
+    border: none;
+    border-radius: 4px;
+    font-family: Gotham Light;
+    margin-right: 7px;
+    padding: 7px 10px;
+    color: #fff;
+}
+.botoes:hover{cursor: pointer;}
+.azul{background-color: #20316d;;}
+.cinza{background-color: #636363;}
+
+@media only screen and (max-width: 550px){
+    label.curriculo,#nomeArquivo{display: none;}
+    label.nomes{width: 100px;}
+    select{width: 230px; font-size: 11pt; background-position: 205px;}
+    input[type="file"]{margin: 0 0 12px 12px; padding-left: 4px; border: solid 1px; border-radius: 15px; height: auto;}
+    input, input[type="file"]{width: 190px;}
+}
