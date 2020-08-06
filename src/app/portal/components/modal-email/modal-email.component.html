@@ -1,0 +1,35 @@
+<div class="modal-content">
+      <div class="modal-header">
+        <h4>{{ title }}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{ message }}</p>
+        <div class="container-grid">
+          <fieldset>
+              <label class="nomes">Nome</label><br>
+              <label class="nomes">Email</label><br>
+              <label class="nomes">Currículo</label><br>
+              <label class="nomes">Área de atuação</label><br>
+          </fieldset>
+          <fieldset>
+              <input type="text" name="" id="nome"><br>
+              <input type="email" name="" id="email"><br>
+              <input type="file" name="file" id="curriculo">
+              <input type="text" id="nomeArquivo" readonly placeholder="Arquivo"><label class="curriculo botoes cinza" for="curriculo">Selecionar</label><br>
+              <select name="" id="setor">
+                <option value="" disabled selected hidden>Qual setor está interessado?</option>
+                <option value="">Desenvolvimento</option>
+                <option value="">Suporte Técnico</option>
+                <option value="">Redes e Internet</option>
+                <option value="">Criação</option>
+              </select>
+          </fieldset>  
+        </div> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="botoes cinza" (click)="close()">
+          Fechar
+        </button>
+        <button class="botoes azul">Enviar</button>
+      </div>
+    </div>
