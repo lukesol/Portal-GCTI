@@ -27,7 +27,10 @@ font-family: "Gotham Light";
     text-decoration: none;
     outline: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
+  
 /*  Setas do carousel  */
 button.slick-prev.slick-arrow:before,button.slick-next.slick-arrow:before{
     font-size: 50px;
