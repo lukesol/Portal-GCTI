@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  portalgctiv2:
+    image: portalgctiv2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - 8080:80
