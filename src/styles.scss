@@ -27,6 +27,9 @@ font-family: "Gotham Light";
     text-decoration: none;
     outline: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /*  Setas do carousel  */
 button.slick-prev.slick-arrow:before,button.slick-next.slick-arrow:before{
@@ -43,9 +46,16 @@ button.slick-next.slick-arrow{
 .slick-dots li button:before{
     font-size: 12px !important;
 }
+/*  Correção Background Modal Ngb  */
+.modal-backdrop{z-index: -1 !important;}
 
 @media only screen and (max-width:770px){
     button.slick-prev.slick-arrow{left: -50px;}
     button.slick-next.slick-arrow{right: -30px;}
     button.slick-prev.slick-arrow:before,button.slick-next.slick-arrow:before{font-size: 40px;}
 }
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

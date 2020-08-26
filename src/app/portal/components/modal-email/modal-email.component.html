@@ -1,9 +1,12 @@
-<div class="modal-content">
-      <div class="modal-header">
-        <h4>{{ title }}</h4>
-      </div>
-      <div class="modal-body">
-        <p>{{ message }}</p>
+
+<div class="modal-header">
+      <h4 class="modal-title">Junte-se ao Time GCTI</h4>
+      <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+</div>
+    <div class="modal-body">
+      <p>Envie o seu currículo no formato DOC ou PDF</p>
         <div class="container-grid">
           <fieldset>
               <label class="nomes">Nome</label><br>
@@ -26,10 +29,6 @@
           </fieldset>  
         </div> 
       </div>
-      <div class="modal-footer">
-        <button type="button" class="botoes cinza" (click)="close()">
-          Fechar
-        </button>
-        <button class="botoes azul">Enviar</button>
-      </div>
-    </div>
+<div class="modal-footer">
+  <button type="button" class="botoes cinza" (click)="activeModal.close('Close click')">Fechar</button>
+</div>
