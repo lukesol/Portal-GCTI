@@ -2,6 +2,8 @@
   "name": "portal-gcti-v2",
   "version": "0.0.0",
   "scripts": {
+    "build:homo": "ng build --prod --aot --base-href=/portal-gcti-2/",
+    "build:prod": "ng build --prod --aot",
     "ng": "ng",
     "start": "npm run hmr --aot",
     "hmr": "ng serve --hmr",
