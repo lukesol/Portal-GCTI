@@ -39,9 +39,9 @@ label.nomes{
 label.curriculo{
     margin: 0;
     display: initial;
-    position: absolute;
-    bottom: 68px;
-    right: -9px;
+    position: relative;
+    bottom: 10px;
+    right: 50px;
     padding: 6px 12px;
 }
 input{
@@ -89,10 +89,10 @@ select{
 .cinza{background-color: #636363;}
 
 @media only screen and (max-width: 550px){
-    label.curriculo,#nomeArquivo{display: none;}
-    label.nomes{width: 100px;}
-    select{width: 230px; font-size: 11pt; background-position: 205px;}
+    label.nomes{width: 70px;}
+    label.curriculo{right: 5px; bottom: 2px;}
+    select{width: 230px; font-size: 11pt; background-position: 205px; position: relative; top: 15px; right: 17px;}
     input[type="file"]{margin: 0 0 12px 12px; padding-left: 4px; border: solid 1px; border-radius: 15px; height: auto;}
     input, input[type="file"]{width: 190px;}
-    h4{margin-left: 90px;}
+    h4{margin: 0;}
 }

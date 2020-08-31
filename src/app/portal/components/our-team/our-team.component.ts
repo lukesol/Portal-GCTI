@@ -34,25 +34,6 @@ export class OurTeamComponent implements OnInit {
   slideConfig = {
     "slidesToShow": 3,
     "slidesToScroll": 3,
-    "rows": 2,
-    "dots": false,
-    "infinite": true,
-    "autoplay": false,
-    "arrows":false,
-    responsive: [
-      {
-        breakpoint: 1075,
-        settings: {slidesToShow: 2, slidesToScroll: 2}
-      },
-      {
-        breakpoint: 795,
-        settings: {slidesToShow: 1, slidesToScroll: 1}
-      }],
-  };
-
-  slideConfigCriacao = {
-    "slidesToShow": 3,
-    "slidesToScroll": 3,
     "rows": 1,
     "dots": false,
     "infinite": true,

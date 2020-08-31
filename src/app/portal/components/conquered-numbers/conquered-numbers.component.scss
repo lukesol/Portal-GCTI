@@ -21,6 +21,7 @@ h4{
     font-weight: bold;
     font-family: Gotham Medium;
     margin-top: 10px;
+    margin-bottom: 0;
     font-size: 18px;
 }
 p.introdutoria{ 
@@ -38,6 +39,7 @@ p.introdutoria{
     color: #888;
     font-family: Gotham Light;
     font-size: 13px;
+    margin: 0;
 }
 img{
     display: block;
@@ -55,4 +57,5 @@ img{
 
 @media only screen and (max-width:670px){
     p.introdutoria{width: 90%;}
+    .icone{margin: 0 20px 70px;}
 }

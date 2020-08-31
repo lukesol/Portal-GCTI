@@ -1,9 +1,30 @@
 .fundo{
-    box-shadow: inset 0 0 160px black;
+    background-color:rgba($color: #000000, $alpha: .7);
+    position: relative;
 }
 img{
     display: block;
     position: relative;
     width: 100%;
     z-index: -1;
+}
+.informacao{
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    text-align: center;
+    top: 40%;
+    left: 25%;
+    right: 25%;
+}
+h4{
+    font-family: Gotham Medium;
+    font-size: 15pt;
+}
+p{
+    margin-top: 15px;
+    font-size: 18pt;
+    font-family: Gotham Black;
+    margin: 0;
 }
