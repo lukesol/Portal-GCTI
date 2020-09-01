@@ -43,8 +43,8 @@
                     <app-team-card [card]="card"></app-team-card>
                 </div>
             </ngx-slick-carousel>
-                <button (click)="prev()" class="seta esquerda setaMobile"></button>
-                <button (click)="next()" class="seta direita setaMobile"></button>
+                <button (click)="prev()" class="seta esquerda"></button>
+                <button (click)="next()" class="seta direita"></button>
           </ng-template>
         </li>
         <li [ngbNavItem]="3">
@@ -55,14 +55,14 @@
                   <app-team-card [card]="card"></app-team-card>
               </div>
             </ngx-slick-carousel>
-                <button (click)="prev()" class="seta esquerda setaMobile"></button>
-                <button (click)="next()" class="seta direita setaMobile"></button> 
+                <button (click)="prev()" class="seta esquerda"></button>
+                <button (click)="next()" class="seta direita"></button> 
           </ng-template>
         </li>
         <li [ngbNavItem]="4">
             <a ngbNavLink class="link"><div><span>Criação</span></div></a>
             <ng-template ngbNavContent>
-              <ngx-slick-carousel id="criacao" class="carousel" #slickModal="slick-carousel" [config]="slideConfigCriacao">
+              <ngx-slick-carousel id="criacao" class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
                 <div ngxSlickItem *ngFor="let card of criacao" class="slide">
                     <app-team-card [card]="card"></app-team-card>
                 </div>

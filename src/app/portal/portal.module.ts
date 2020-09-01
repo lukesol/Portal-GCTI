@@ -18,6 +18,7 @@ import { ModalEmailComponent } from './components/modal-email/modal-email.compon
 import { OurTeamComponent } from './components/our-team/our-team.component';
 import { TeamCardComponent } from './components/team-card/team-card.component';
 import { OurTeamService } from './components/our-team/our-team.service';
+import { MenuButtonComponent } from './components/menu-button/menu-button.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -26,7 +27,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, PortalComponent, DepartmentsComponent, WhatwedoComponent,
      WhatwedoItemComponent, ConqueredNumbersComponent, MainProjectsComponent,MainProjectsItemComponent,
-      WhoMakesUsComponent, ModalEmailComponent, OurTeamComponent, TeamCardComponent
+      WhoMakesUsComponent, ModalEmailComponent, OurTeamComponent, TeamCardComponent, MenuButtonComponent
     ],
   imports: [
     CommonModule,
@@ -37,7 +38,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   providers:[
     OurTeamService
   ],
-  exports:[WhoMakesUsComponent]
+  exports:[]
 
 })
 export class PortalModule { }
