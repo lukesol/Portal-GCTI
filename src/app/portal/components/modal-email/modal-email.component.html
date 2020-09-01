@@ -1,33 +1,33 @@
-
 <div class="modal-header">
-      <h4 class="modal-title">Junte-se ao Time GCTI</h4>
-      <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
-        <span aria-hidden="true">&times;</span>
-      </button>
+  <h4 class="modal-title">Junte-se ao Time GCTI</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>
-    <div class="modal-body">
-      <p>Envie o seu currículo no formato DOC ou PDF</p>
-        <div class="container-grid">
-          <fieldset>
-              <label class="nomes">Nome</label><br>
-              <label class="nomes">Email</label><br>
-              <label class="nomes">Currículo</label><br><br>
-              <label class="nomes">Área de atuação</label><br>
-          </fieldset>
-          <fieldset>
-              <input type="text" name="" id="nome"><br>
-              <input type="email" name="" id="email"><br>
-              <input type="text" id="nomeArquivo" readonly placeholder="Arquivo"><br> <label class="curriculo botoes cinza" for="curriculo">Selecionar</label><br>
-              <select name="" id="setor">
-                <option value="" disabled selected hidden>Qual setor está interessado?</option>
-                <option value="">Desenvolvimento</option>
-                <option value="">Suporte Técnico</option>
-                <option value="">Redes e Internet</option>
-                <option value="">Criação</option>
-              </select>
-          </fieldset>  
-        </div> 
-      </div>
+<div class="modal-body">
+  <p>Envie o seu currículo no formato DOC ou PDF</p>
+  <div class="container-grid">
+    <fieldset>
+      <label class="nomes">Nome</label><br>
+      <label class="nomes">Email</label><br>
+      <label class="nomes">Currículo</label><br><br>
+      <label class="nomes">Área de atuação</label><br>
+    </fieldset>
+    <fieldset>
+      <input type="text" name="" id="nome"><br>
+      <input type="email" name="" id="email"><br>
+      <input type="text" id="nomeArquivo" readonly placeholder="Arquivo"><br> <label class="curriculo botoes cinza"
+        for="curriculo">Selecionar</label><br>
+      <select name="" id="setor">
+        <option value="" disabled selected hidden>Qual setor está interessado?</option>
+        <option value="">Desenvolvimento</option>
+        <option value="">Suporte Técnico</option>
+        <option value="">Redes e Internet</option>
+        <option value="">Criação</option>
+      </select>
+    </fieldset>
+  </div>
+</div>
 <div class="modal-footer">
   <button type="button" class="botoes cinza" (click)="activeModal.close('Close click')">Fechar</button>
 </div>

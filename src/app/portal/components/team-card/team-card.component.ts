@@ -7,11 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TeamCardComponent implements OnInit {
 
+  @Input() card;
+  
   constructor() { }
   
   ngOnInit(): void {
   }
-  
-  @Input() card
 
 }

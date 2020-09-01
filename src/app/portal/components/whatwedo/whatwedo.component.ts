@@ -25,6 +25,7 @@ export class WhatwedoComponent implements OnInit {
     {n:"1",description:"Parnamirim Digital",title:"Portal",img: "assets/Imagens/icons/ico_parnamirim_digital.svg",link:"http://portalparnamirimdigital.parnamirim.rn.gov.br/"},
     {n:"0",description:"Corrida do Trabalhador",title:"Portal",img: "assets/Imagens/icons/ico_corrida_trabalhador.svg",link:"http://portalcorridadotrabalhador.parnamirim.rn.gov.br/#/home"}
   ];
+
   slideConfig = {
    "slidesToShow": 4,
    "slidesToScroll": 4,
@@ -40,6 +41,7 @@ export class WhatwedoComponent implements OnInit {
    "dots": false,
    "arrows": true
   };
+  
 }
 
 

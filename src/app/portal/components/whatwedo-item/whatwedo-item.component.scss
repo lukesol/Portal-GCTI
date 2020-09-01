@@ -1,29 +1,43 @@
-div{
-    padding: 30px 20px 20px;
-}
-img{
-    width: 55%;
-    margin: 0 auto;
-}
-h1,p{
-    text-align: center;
-    font-family: Gotham Light;
-    margin: 0;
-}
-h1{
-    font-family: Gotham Medium;
-    font-size: 18px;
-}
-p{
-    font-size: 15px;
+div {
+  padding: 30px 20px 20px;
 }
 
-@media only screen and (max-width:1295px){
-    p{font-size: 12px; font-weight: 600;}
+img {
+  width: 55%;
+  margin: 0 auto;
 }
-@media only screen and (max-width:1060px){
-    p{font-size: 11px;}
+
+h1,
+p {
+  text-align: center;
+  font-family: Gotham Light;
+  margin: 0;
 }
-@media only screen and (max-width:990px){
-    div{padding: 30px 0px 20px;}
+
+h1 {
+  font-family: Gotham Medium;
+  font-size: 18px;
+}
+
+p {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1295px) {
+  p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  p {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  div {
+    padding: 30px 0px 20px;
+  }
 }

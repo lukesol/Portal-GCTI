@@ -12,9 +12,8 @@ export class MenuButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggle(){
+  toggle() {
     var container = document.getElementById("container");
-    
     container.classList.toggle("change")
   }
 

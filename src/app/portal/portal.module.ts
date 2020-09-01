@@ -25,20 +25,32 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, PortalComponent, DepartmentsComponent, WhatwedoComponent,
-     WhatwedoItemComponent, ConqueredNumbersComponent, MainProjectsComponent,MainProjectsItemComponent,
-      WhoMakesUsComponent, ModalEmailComponent, OurTeamComponent, TeamCardComponent, MenuButtonComponent
-    ],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    PortalComponent,
+    DepartmentsComponent,
+    WhatwedoComponent,
+    WhatwedoItemComponent,
+    ConqueredNumbersComponent,
+    MainProjectsComponent,
+    MainProjectsItemComponent,
+    WhoMakesUsComponent, 
+    ModalEmailComponent, 
+    OurTeamComponent, 
+    TeamCardComponent, 
+    MenuButtonComponent
+  ],
   imports: [
     CommonModule,
     PortalRoutingModule,
     SlickCarouselModule,
     NgbModule
   ],
-  providers:[
+  providers: [
     OurTeamService
   ],
-  exports:[]
+  exports: []
 
 })
 export class PortalModule { }
