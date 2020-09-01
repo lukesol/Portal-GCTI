@@ -1,87 +1,113 @@
-.titulo{
-    background-color: #11306f;
+.titulo {
+  background-color: #11306f;
 }
-.titulo h1{
-    color: white;
-    letter-spacing: 0.2px;
-    font-size: 36px;
-    margin: 0;
-    padding: 12px 0px;
-    font-family: Gotham Medium;
-    text-align: center;
+
+.titulo h1 {
+  color: white;
+  letter-spacing: 0.2px;
+  font-size: 36px;
+  margin: 0;
+  padding: 12px 0px;
+  font-family: Gotham Medium;
+  text-align: center;
 }
-.containerImagens{
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
+
+.containerImagens {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
 }
-.fundo{
-    display: grid;
-    transition: 1s;
-    position: relative;
+
+.fundo {
+  display: grid;
+  transition: 1s;
+  position: relative;
 }
-.fundo:hover{
-    background-color:rgba($color: #000000, $alpha: .7);
+
+.fundo:hover {
+  background-color: rgba($color: #000000, $alpha: 0.7);
 }
-.fundo:hover .informacao{
-    opacity: 1;
+
+.fundo:hover .informacao {
+  opacity: 1;
 }
-img{
+
+img {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+.informacao {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  color: white;
+  text-align: center;
+  transition: 1s;
+  top: 40%;
+  left: 25%;
+  right: 25%;
+  opacity: 0;
+}
+
+h4 {
+  font-family: Gotham Medium;
+  font-size: 15pt;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 20pt;
+  font-family: Gotham Black;
+  margin: 0;
+}
+
+.seta {
+  border: solid white;
+  background-color: transparent;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+.mobile,
+.seta {
+  display: none;
+}
+
+.direita {
+  position: absolute;
+  top: 60%;
+  right: 5%;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.esquerda {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+section {
+  position: relative;
+}
+
+@media only screen and (max-width: 945px) {
+  p {
+    font-size: 16pt;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .mobile,
+  .seta {
     display: block;
-    position: relative;
-    width: 100%;
-    z-index: -1;
-}
-.informacao{
-    position: absolute;
-    display: flex;
-    flex-flow: column nowrap;
-    color: white;
-    text-align: center;
-    transition: 1s;
-    top: 40%;
-    left: 25%;
-    right: 25%;
-    opacity: 0;
-}
-h4{
-    font-family: Gotham Medium;
-    font-size: 15pt;
-}
-p{
-    margin-top: 15px;
-    font-size: 20pt;
-    font-family: Gotham Black;
-    margin: 0;
-}
-.seta{
-    border: solid white;
-    background-color: transparent;
-    border-width: 0 7px 7px 0;
-    display: inline-block;
-    padding: 10px;
-}
-.mobile,.seta{
+  }
+  .containerImagens {
     display: none;
-}
-.direita{
-    position: absolute;
-    top: 60%;
-    right: 5%;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
-.esquerda{
-    position: absolute;
-    top: 60%;
-    left: 5%;
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-}
-section{position: relative;}
-@media only screen and (max-width:945px){
-    p{font-size: 16pt;}
-}
-@media only screen and (max-width:770px){
-    .mobile,.seta{display: block;}
-    .containerImagens{display: none;}
+  }
 }
