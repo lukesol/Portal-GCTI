@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { ModalEmailComponent } from './../modal-email/modal-email.component';
+
+import { ModalEmailComponent } from './../modal-email/modal-email.component';
   
 @Component({
   selector: 'app-who-makes-us',
@@ -14,7 +16,7 @@ export class WhoMakesUsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
   open() {
     const modalRef = this.modalService.open(ModalEmailComponent);
   }

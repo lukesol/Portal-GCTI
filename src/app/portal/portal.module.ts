@@ -35,10 +35,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ConqueredNumbersComponent,
     MainProjectsComponent,
     MainProjectsItemComponent,
-    WhoMakesUsComponent, 
-    ModalEmailComponent, 
-    OurTeamComponent, 
-    TeamCardComponent, 
+    WhoMakesUsComponent,
+    ModalEmailComponent,
+    OurTeamComponent,
+    TeamCardComponent,
     MenuButtonComponent
   ],
   imports: [

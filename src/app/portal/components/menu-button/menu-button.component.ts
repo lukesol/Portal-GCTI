@@ -13,8 +13,8 @@ export class MenuButtonComponent implements OnInit {
   }
 
   toggle() {
-    var container = document.getElementById("container");
-    container.classList.toggle("change")
+    const container = document.getElementById('container');
+    container.classList.toggle('change');
   }
 
 }

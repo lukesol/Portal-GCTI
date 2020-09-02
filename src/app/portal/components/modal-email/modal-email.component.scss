@@ -57,11 +57,7 @@ input{
     border-radius: 15px;
 }
 input[type="file"]{
-    margin: 0;
-    width: 0;
-    border: none;
-    height: 0;
-    padding: 0;
+    visibility: hidden;
 }
 select{
     appearance: none;
@@ -92,7 +88,6 @@ select{
     label.nomes{width: 70px;}
     label.curriculo{right: 5px; bottom: 2px;}
     select{width: 230px; font-size: 11pt; background-position: 205px; position: relative; top: 15px; right: 17px;}
-    input[type="file"]{margin: 0 0 12px 12px; padding-left: 4px; border: solid 1px; border-radius: 15px; height: auto;}
     input, input[type="file"]{width: 190px;}
     h4{margin: 0;}
 }

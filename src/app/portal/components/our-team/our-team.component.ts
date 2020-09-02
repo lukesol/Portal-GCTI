@@ -12,8 +12,8 @@ export class OurTeamComponent implements OnInit {
 
   cardDario = [
     {
-      nome: "DARIO CANDIDO DE MEDEIROS", img: "/assets/Imagens/dario.png",
-      cargo: "ASSESSOR ESPECIAL ASCTI/SECRETÁRIO ADJUNTO"
+      nome: 'DARIO CANDIDO DE MEDEIROS', img: '/assets/Imagens/dario.png',
+      cargo: 'ASSESSOR ESPECIAL ASCTI/SECRETÁRIO ADJUNTO'
     }
   ];
 
@@ -24,13 +24,13 @@ export class OurTeamComponent implements OnInit {
   criacao: any[] = [];
 
   slideConfig = {
-    "slidesToShow": 3,
-    "slidesToScroll": 3,
-    "rows": 1,
-    "dots": false,
-    "infinite": true,
-    "autoplay": false,
-    "arrows": false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    rows: 1,
+    dots: false,
+    infinite: true,
+    autoplay: false,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1075,
@@ -63,13 +63,13 @@ export class OurTeamComponent implements OnInit {
   }
 
   corBotoes() {
-    var nav = document.getElementById("nav");
-    var btns = nav.getElementsByClassName("link");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
+    const nav = document.getElementById('nav');
+    const btns = nav.getElementsByClassName('link');
+    for (let i = 0; i < btns.length; i++) {
+      btns[i].addEventListener('click', function() {
+        const current = document.getElementsByClassName('active');
+        current[0].className = current[0].className.replace(' active', '');
+        this.className += ' active';
       });
     }
   }
