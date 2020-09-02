@@ -1,0 +1,90 @@
+<section id="ourTeam">
+  <div class="introducao">
+    <h1>Nossa Equipe</h1>
+    <p>Clique em uma das quatro áreas de atuação do GCTI e conheça os responsáveis pelo desenvolvimento e
+      pela manutenção do parque tecnológico de Parnamirim em cada área de atuação.</p>
+  </div>
+
+  <div class="blocoDirecao">
+    <span class="direcao"> Direção </span>
+  </div>
+
+  <div class="containerDirecao">
+    <app-team-card *ngFor="let card of cardDario" [card]="card"></app-team-card>
+
+    <div class="texto">
+      <p>Natural de Cerro Corá/RN, região do Seridó, nascido em setembro de 1961, viveu até os 14 anos em um lugar
+        lindo,
+        entre Currais Novos e Cerro Corá, chamado Pedra Preta, onde foi alfabetizado a luz de lampião.</p>
+      <p>Cursou todo o ensino fundamental e médio em Escola Pública.</p>
+      <p>Técnico em Contabilidade e Informática e Superior em Gestão Pública pela FACEX.</p>
+      <p>Trabalha com Tecnologia da Informação desde os anos 80, quando ingressou na Força Aérea Brasileira, época de
+        TK2000 e IBM XT, onde permaneceu até dezembro de 2009.</p>
+      <p>Assumiu a Tecnologia da Informação da Prefeitura de Parnamirim, em julho de 2009.</p>
+    </div>
+  </div>
+
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="botoes" id="nav">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink class="link">
+        <div><span>Desenvolvimento</span></div>
+      </a>
+      <ng-template ngbNavContent>
+        <ngx-slick-carousel id="dev" class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+          <div ngxSlickItem *ngFor="let card of desenvolvimento" class="slide">
+            <app-team-card [card]="card"></app-team-card>
+          </div>
+        </ngx-slick-carousel>
+        <button (click)="prev()" class="seta esquerda"></button>
+        <button (click)="next()" class="seta direita"></button>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink class="link">
+        <div><span>Redes e Internet</span></div>
+      </a>
+      <ng-template ngbNavContent>
+        <ngx-slick-carousel id="redes" class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+          <div ngxSlickItem *ngFor="let card of redes" class="slide">
+            <app-team-card [card]="card"></app-team-card>
+          </div>
+        </ngx-slick-carousel>
+        <button (click)="prev()" class="seta esquerda"></button>
+        <button (click)="next()" class="seta direita"></button>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <a ngbNavLink class="link">
+        <div><span>Suporte Técnico</span></div>
+      </a>
+      <ng-template ngbNavContent>
+        <ngx-slick-carousel id="suporte" class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+          <div ngxSlickItem *ngFor="let card of suporte" class="slide">
+            <app-team-card [card]="card"></app-team-card>
+          </div>
+        </ngx-slick-carousel>
+        <button (click)="prev()" class="seta esquerda"></button>
+        <button (click)="next()" class="seta direita"></button>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="4">
+      <a ngbNavLink class="link">
+        <div><span>Criação</span></div>
+      </a>
+      <ng-template ngbNavContent>
+        <ngx-slick-carousel id="criacao" class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+          <div ngxSlickItem *ngFor="let card of criacao" class="slide">
+            <app-team-card [card]="card"></app-team-card>
+          </div>
+        </ngx-slick-carousel>
+        <button (click)="prev()" class="seta esquerda setaMobile"></button>
+        <button (click)="next()" class="seta direita setaMobile"></button>
+      </ng-template>
+    </li>
+  </ul>
+
+  <div class="containerSetores">
+    <div [ngbNavOutlet]="nav"></div>
+  </div>
+
+</section>

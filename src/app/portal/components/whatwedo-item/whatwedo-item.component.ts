@@ -6,11 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./whatwedo-item.component.scss']
 })
 export class WhatwedoItemComponent implements OnInit {
+
+  @Input()
+  item: any;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  @Input()
-  item:any
 }

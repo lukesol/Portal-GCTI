@@ -3,6 +3,9 @@
     font-size: 18pt;
     color: #646464;
 }
+    h4{
+        margin-left: 115px;
+    }
     h4, p{
         font-family: Gotham Light;
         font-weight: bold;
@@ -26,16 +29,19 @@
 }
 fieldset{
     border: none;
+    position: relative;
 }
 label.nomes{
     display: block;
     width: 135px;
+    margin: 0;
 }
 label.curriculo{
     margin: 0;
     display: initial;
     position: relative;
-    top: 41px;
+    bottom: 10px;
+    right: 50px;
     padding: 6px 12px;
 }
 input{
@@ -45,17 +51,13 @@ input{
     width: 220px;
     float: left;
     line-height: 23px;
-    margin: 0 0 12px 12px;
+    margin: 0 0 21px 5px;
     padding-left: 4px;
     border: solid 1px;
     border-radius: 15px;
 }
 input[type="file"]{
-    margin: 0;
-    width: 0;
-    border: none;
-    height: 0;
-    padding: 0;
+    visibility: hidden;
 }
 select{
     appearance: none;
@@ -83,9 +85,9 @@ select{
 .cinza{background-color: #636363;}
 
 @media only screen and (max-width: 550px){
-    label.curriculo,#nomeArquivo{display: none;}
-    label.nomes{width: 100px;}
-    select{width: 230px; font-size: 11pt; background-position: 205px;}
-    input[type="file"]{margin: 0 0 12px 12px; padding-left: 4px; border: solid 1px; border-radius: 15px; height: auto;}
+    label.nomes{width: 70px;}
+    label.curriculo{right: 5px; bottom: 2px;}
+    select{width: 230px; font-size: 11pt; background-position: 205px; position: relative; top: 15px; right: 17px;}
     input, input[type="file"]{width: 190px;}
+    h4{margin: 0;}
 }

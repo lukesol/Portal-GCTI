@@ -7,12 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MainProjectsItemComponent implements OnInit {
 
+  @Input()
+  item: any;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-  
-@Input()
-item:any
 
 }

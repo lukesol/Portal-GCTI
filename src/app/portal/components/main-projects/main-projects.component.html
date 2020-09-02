@@ -1,4 +1,4 @@
-<section>
+<section id="projetos">
     <div class="titulo">
         <h1>PRINCIPAIS PROJETOS</h1>
     </div>
@@ -35,7 +35,7 @@
         <div class="fundo">
             <a href="http://portalfinados.parnamirim.rn.gov.br/#/home" target="_blank">
                 <img src="assets/Imagens/projetos_finados.png">
-               <div class="informacao">
+                <div class="informacao">
                     <h4>- Portal -</h4>
                     <p>Portal Finados</p>
                 </div>
@@ -49,7 +49,7 @@
                     <p>Fala Cidadão</p>
                 </div>
             </a>
-        </div>    
+        </div>
         <div class="fundo">
             <a href="http://pontoeletronico.parnamirim.rn.gov.br:8080/#/login" target="_blank">
                 <img src="assets/Imagens/projetos_ponto.png">
@@ -58,15 +58,15 @@
                     <p>Ponto Eletrônico</p>
                 </div>
             </a>
-        </div>    
-    </div>   
+        </div>
+    </div>
 
     <ngx-slick-carousel class="carousel mobile" #slickModal="slick-carousel" [config]="slideConfig">
-            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-                <app-main-projects-item [item]="slide"></app-main-projects-item>
-            </div>
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <app-main-projects-item [item]="slide"></app-main-projects-item>
+        </div>
     </ngx-slick-carousel>
     <button (click)="prev()" class="seta esquerda"></button>
     <button (click)="next()" class="seta direita"></button>
-        
+
 </section>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SimpleModalService } from "ngx-simple-modal";
-import { ModalEmailComponent } from '../modal-email/modal-email.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+import { ModalEmailComponent } from './../modal-email/modal-email.component';
 
 @Component({
   selector: 'app-who-makes-us',
@@ -9,16 +10,14 @@ import { ModalEmailComponent } from '../modal-email/modal-email.component';
 })
 export class WhoMakesUsComponent implements OnInit {
 
-  constructor(private simpleModalService: SimpleModalService) { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
-  
-  showAlert() {
-    this.simpleModalService.addModal(ModalEmailComponent, {
-      title: "Junte-se ao Time GCTI",
-      message: "Envie o seu currículo no formato DOC ou PDF"
-    });
+
+  open() {
+    const modalRef = this.modalService.open(ModalEmailComponent);
   }
 
 }
+
