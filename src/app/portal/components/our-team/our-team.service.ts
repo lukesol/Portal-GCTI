@@ -28,13 +28,13 @@ export class OurTeamService {
          formacao: 'Técnico em Informática'},
         {nome: 'LUIS FELIPE ALIPIO DE SOUZA', img: '/assets/Imagens/luis_felipe.jpg', cargo: 'ESTAGIÁRIO',
          formacao: 'Técnico em TI', formacao1: 'Graduando em Bacharelado de TI'},
-         {nome: 'ZANETTE CIRÍACO', img: '/assets/Imagens/zanette_ciriaco.jpg', cargo: 'ESTAGIÁRIO',
+         {nome: 'JOSÉ ZANETTE CIRÍACO DA SILVA', img: '/assets/Imagens/zanette_ciriaco.jpg', cargo: 'ESTAGIÁRIO',
          formacao: 'Sistemas para Internet'},
-         {nome: 'VINICIUS RICARDO', img: '/assets/Imagens/vinicius_ricardo.png', cargo: 'ESTAGIÁRIO',
+         {nome: 'VINICIUS RICARDO DA SILVA', img: '/assets/Imagens/vinicius_ricardo.png', cargo: 'ESTAGIÁRIO',
          formacao: 'Tecnólogo em Sistemas para Internet'},
-         {nome: 'THALES SILVA', img: '/assets/Imagens/thales_silva.jpg', cargo: 'ESTAGIÁRIO',
+         {nome: 'THALES AZEVEDO SILVA', img: '/assets/Imagens/thales_silva.jpg', cargo: 'ESTAGIÁRIO',
          formacao: 'Técnico em Informática', formacao1: 'Graduando em Análise e Desenvolvimento'},
-         {nome: 'ALISSANDRA CABRAL', img: '/assets/Imagens/alissandra_cabral.jpeg', cargo: 'ESTAGIÁRIO',
+         {nome: 'ALISSANDRA CASTELO BRANCO CABRAL', img: '/assets/Imagens/alissandra_cabral.jpeg', cargo: 'ESTAGIÁRIO',
          formacao: 'Tecnólogo em Sistemas para Internet'},
         ];
     }

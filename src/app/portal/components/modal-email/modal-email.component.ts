@@ -14,4 +14,11 @@ export class ModalEmailComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  mostrarArquivo(input) {
+  const file = input.target.files[0];
+  const textField = (document.getElementById('nomeArquivo') as HTMLInputElement);
+
+  textField.value = file.name;
+}
+
 }
