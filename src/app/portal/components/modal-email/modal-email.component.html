@@ -15,19 +15,20 @@
     </fieldset>
     <fieldset>
       <input type="text" name="" id="nome"><br>
-      <input type="email" name="" id="email"><br>
+      <input type="email" name="" id="email" required><br>
       <input type="text" id="nomeArquivo" readonly placeholder="Arquivo"><br> 
+      <input type="file" id="curriculo" (change)="mostrarArquivo($event)" required>
       <label class="curriculo botoes cinza" for="curriculo">Selecionar</label><br>
-      <select name="" id="setor">
+      <select name="" id="setor" required>
         <option value="" disabled selected hidden>Qual setor está interessado?</option>
-        <option value="">Desenvolvimento</option>
-        <option value="">Suporte Técnico</option>
-        <option value="">Redes e Internet</option>
-        <option value="">Criação</option>
+        <option value="Desenvolvimento">Desenvolvimento</option>
+        <option value="Suporte">Suporte Técnico</option>
+        <option value="Redes">Redes e Internet</option>
+        <option value="Criação">Criação</option>
       </select>
     </fieldset>
   </div>
 </div>
 <div class="modal-footer">
-  <button type="button" class="botoes cinza" (click)="activeModal.close('Close click')">Fechar</button>
+  <button type="submit" class="botoes azul">Enviar</button>
 </div>

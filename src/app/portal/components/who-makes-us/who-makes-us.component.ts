@@ -3,8 +3,6 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { ModalEmailComponent } from './../modal-email/modal-email.component';
 
-import { ModalEmailComponent } from './../modal-email/modal-email.component';
-  
 @Component({
   selector: 'app-who-makes-us',
   templateUrl: './who-makes-us.component.html',
