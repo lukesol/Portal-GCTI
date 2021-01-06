@@ -1,0 +1,22 @@
+<section id="oquefazemos">
+    <div class="introducao">
+        <h1>O QUE FAZEMOS</h1>
+        <p>Somos a autoridade na produção de Portais, Sites, Hotsites e Sistemas Web que
+            atendam as necessidades da administração pública municipal.</p>
+    </div>
+
+    <div class="container">
+        <ngx-slick-carousel class="carousel desktop" #slickModal="slick-carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides; let i = index"
+                [ngStyle]="{'background-color':slide.n==='0' ? '#eee' : '#ddd'}" class="slide">
+                <app-whatwedo-item [item]="slide"></app-whatwedo-item>
+            </div>
+        </ngx-slick-carousel>
+        <ngx-slick-carousel class="carousel mobile" #slickModal="slick-carousel" [config]="mobileConfig">
+            <div ngxSlickItem *ngFor="let slide of slides; let i = index"
+                [ngStyle]="{'background-color':slide.n==='0' ? '#eee' : '#ddd'}" class="slide">
+                <app-whatwedo-item [item]="slide"></app-whatwedo-item>
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</section>

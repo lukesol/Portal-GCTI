@@ -1,0 +1,34 @@
+<div class="modal-header">
+  <h4 class="modal-title">Junte-se ao Time GCTI</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <p>Envie o seu currículo no formato DOC ou PDF</p>
+  <div class="container-grid">
+    <fieldset>
+      <label class="nomes">Nome</label><br>
+      <label class="nomes">Email</label><br>
+      <label class="nomes">Currículo</label><br><br>
+      <label class="nomes">Área de atuação</label><br>
+    </fieldset>
+    <fieldset>
+      <input type="text" name="" id="nome"><br>
+      <input type="email" name="" id="email" required><br>
+      <input type="text" id="nomeArquivo" readonly placeholder="Arquivo"><br> 
+      <input type="file" id="curriculo" (change)="mostrarArquivo($event)" required>
+      <label class="curriculo botoes cinza" for="curriculo">Selecionar</label><br>
+      <select name="" id="setor" required>
+        <option value="" disabled selected hidden>Qual setor está interessado?</option>
+        <option value="Desenvolvimento">Desenvolvimento</option>
+        <option value="Suporte">Suporte Técnico</option>
+        <option value="Redes">Redes e Internet</option>
+        <option value="Criação">Criação</option>
+      </select>
+    </fieldset>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="submit" class="botoes azul">Enviar</button>
+</div>

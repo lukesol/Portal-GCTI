@@ -1,0 +1,38 @@
+.card{
+    width: auto;
+    height: 390px;
+    margin: 20px 20px;
+    text-align: center;
+    background-color: #636363;
+}
+    .nomeCard{
+        font-family: Gotham Light;
+        font-size: 14px;
+        padding: 14px;
+        background-color: #a8a8a8;
+    }
+    img{
+        border: solid 7px #424242;
+        border-radius: 110px;
+        margin: 10px auto;
+        width: 193px;
+        height: 200px;
+    }
+    .cargo{
+        font-family: Gotham Light;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+        padding: 5px 0 7px 0;
+        line-height: normal;
+    }
+    .formacao{
+        font-family: Gotham Light;
+        color: white;
+        margin: 0;
+        line-height: 1;
+    }
+@media only screen and (max-width: 670px){
+.cargo {font-size: 20px;}
+}
